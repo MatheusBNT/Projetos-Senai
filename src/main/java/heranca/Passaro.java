@@ -1,7 +1,6 @@
 package heranca;
 
 public class Passaro extends Animal{
-    private final String som = "Piu-Piu";
 
     public Passaro(String nome, int idade) {
         super(nome, idade);
@@ -9,6 +8,7 @@ public class Passaro extends Animal{
 
     @Override
     public void fazerSom() {
-        System.out.println(som);
+        super.setSomDoAnimal("Piu-Piu");
+        super.fazerSom();
     }
 }

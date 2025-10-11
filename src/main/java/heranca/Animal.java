@@ -3,6 +3,7 @@ package heranca;
 public class Animal {
     private String nome;
     private int idade;
+    private String somDoAnimal = "Som de animal";
 
     public Animal() {
     }
@@ -17,8 +18,7 @@ public class Animal {
     }
 
     public void fazerSom(){
-        String som = "Som animal";
-        System.out.println(som);
+        System.out.println(somDoAnimal);
     }
 
     public String getNome() {
@@ -35,5 +35,13 @@ public class Animal {
 
     public void setIdade(int idade) {
         this.idade = idade;
+    }
+
+    public String getSomDoAnimal() {
+        return somDoAnimal;
+    }
+
+    public void setSomDoAnimal(String somDoAnimal) {
+        this.somDoAnimal = somDoAnimal;
     }
 }
